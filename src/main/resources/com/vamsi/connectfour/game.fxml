@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vamsi.connectfour.MyController">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints prefWidth="280" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="28" />
+    <RowConstraints />
+  </rowConstraints>
+   <children>
+      <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertDiscPane" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: blue;" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: brown;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="4.0" />
+               </padding></Region>
+            <Label fx:id="playerNameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="294.0" text="Player One" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="284.0" text="Turn" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children></VBox>
+   </children>
+</GridPane>
